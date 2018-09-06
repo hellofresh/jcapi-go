@@ -10,7 +10,6 @@
 package v1
 
 type Systemuserreturn struct {
-
 	Email string `json:"email,omitempty"`
 
 	Username string `json:"username,omitempty"`
@@ -61,7 +60,7 @@ type Systemuserreturn struct {
 
 	SambaServiceUser bool `json:"samba_service_user,omitempty"`
 
-	Id string `json:"id,omitempty"`
+	Id string `json:"_id,omitempty"`
 
 	Organization string `json:"organization,omitempty"`
 
@@ -93,6 +92,6 @@ type Systemuserreturn struct {
 
 	Company string `json:"company,omitempty"`
 
-	// Must be unique per user. 
+	// Must be unique per user.
 	EmployeeIdentifier string `json:"employeeIdentifier,omitempty"`
 }
