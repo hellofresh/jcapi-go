@@ -18,7 +18,7 @@ type Systemuserreturn struct {
 
 	PublicKey string `json:"public_key,omitempty"`
 
-	SshKeys []string `json:"ssh_keys,omitempty"`
+	SshKeys []interface{} `json:"ssh_keys,omitempty"`
 
 	Sudo bool `json:"sudo,omitempty"`
 
@@ -64,13 +64,13 @@ type Systemuserreturn struct {
 
 	Organization string `json:"organization,omitempty"`
 
-	Addresses []string `json:"addresses,omitempty"`
+	Addresses []interface{} `json:"addresses,omitempty"`
 
 	JobTitle string `json:"jobTitle,omitempty"`
 
 	Department string `json:"department,omitempty"`
 
-	PhoneNumbers []string `json:"phoneNumbers,omitempty"`
+	PhoneNumbers []interface{} `json:"phoneNumbers,omitempty"`
 
 	Relationships []interface{} `json:"relationships,omitempty"`
 
